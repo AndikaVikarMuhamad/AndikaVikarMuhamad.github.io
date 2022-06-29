@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "inter", sans-serif;
+  background-color: #ffffff;
+}
+.navbar-fixed {
+  @apply fixed z-[9999] bg-white bg-opacity-70 backdrop-blur-sm dark:bg-dark dark:bg-opacity-50;
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.tombol-line {
+  @apply w-[30px] h-[2px] my-2 block bg-dark dark:bg-white;
+}
+.tombol-aktif > span:nth-child(1) {
+  @apply rotate-45;
+}
+.tombol-aktif > span:nth-child(2) {
+  @apply scale-0;
+}
+
+.tombol-aktif > span:nth-child(3) {
+  @apply -rotate-45;
+}
+#home {
+}
+#about {
+}
+#dark-toggle:checked ~ label div.toggle-circle {
+  @apply translate-x-3;
+}

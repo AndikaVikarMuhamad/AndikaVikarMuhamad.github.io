@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andika vikar🥶</title>
+    <link href="dist/output.css" rel="stylesheet" />
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+  </head>
+  <body class="bg-gradient-to-b from-slate-700 to-slate-900 dark:text-white">
+    <!-- Navbar -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a class="block py-6 text-ungu font-bold dark:text-danger" href="">
+              Andika vikar
+            </a>
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="tombol"
+              name="tombol"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="tombol-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="tombol-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="tombol-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="hidden bg-white absolute py-5 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none xl:px-10 dark:shadow-slate-700 dark:bg-dark lg:dark:bg-transparent"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-violet dark:text-white dark:group-hover:text-danger"
+                  >
+                    Home</a
+                  >
+                </li>
+
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-violet dark:text-white dark:group-hover:text-danger"
+                  >
+                    About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#project"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-violet dark:text-white dark:group-hover:text-danger"
+                  >
+                    Project</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#game"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-violet dark:text-white dark:group-hover:text-danger"
+                  >
+                    Game
+                  </a>
+                </li>
+                <li class="mt-3 flex items-center pl-8 lg:mt-0">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-dark dark:text-white"
+                      >Light</span
+                    >
+                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                    <label for="dark-toggle">
+                      <div
+                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
+                      >
+                        <div
+                          class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"
+                        ></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-dark dark:text-white"
+                      >Dark</span
+                    >
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Navbar end -->
+    <!-- Hero  -->
+    <section
+      id="home"
+      class="pt-36 bg-gradient-to-b from-white to-violet5 dark:bg-none"
+    >
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div
+            class="w-full self-center px-4 lg:w-1/2 md:px-20 lg:px-20 2xl:px-20"
+          >
+            <h1
+              class="text-base font-semibold text-ungu md:text-xl dark:text-danger"
+            >
+              Halo Semua 😀 saya,<span
+                class="block font-bold dark:text-white text-dark text-4xl mt-1 lg:text-5xl"
+              >
+                Andika vikar</span
+              >
+            </h1>
+            <h2 class="font-medium text-violet lg:text-2xl dark:text-danger">
+              Gamer <span class="text-black"> | </span
+              ><span class="anim-typewriter text-green-600 dark:text-biru"
+                >Nolep/weebs</span
+              >
+            </h2>
+            <p
+              class="font-medium text-abu mb-10 leading-relaxed dark:text-gray-300"
+            >
+              Hanya Seorang Manusia Abnormal Yg Mencintai Karakter Fiksi Dan
+              Ingin Melindungi Apa Yg Dia Cintai
+            </p>
+            <a
+              href=""
+              class="text-base font-semibold text-white dark:bg-danger bg-violet3 py-3 px-8 rounded-full hover:shadow-xl hover:bg-slate-700 transition duration-250 ease-linear dark:hover:bg-slate-300"
+              >My Discord</a
+            >
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:mt-8 lg:right-0">
+              <img
+                width="360"
+                height="360"
+                src="dist/img/cirno.png"
+                alt="Cirno"
+                class="max-w-full mx-auto relative z-10"
+              />
+              <span
+                class="absolute -bottom-20 left-1/2 -translate-x-1/2 md:scale-125 animate-pulse"
+              >
+                <svg
+                  widht="400"
+                  height="400"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#facc15"
+                    d="M30.5,-61.9C36.1,-49.7,34.6,-34.4,38.9,-23.6C43.2,-12.8,53.1,-6.4,57.7,2.6C62.2,11.6,61.3,23.2,57.4,34.7C53.5,46.1,46.6,57.4,36.5,62.9C26.4,68.4,13.2,68.2,-0.3,68.7C-13.8,69.2,-27.7,70.6,-35.2,63.6C-42.7,56.6,-43.9,41.3,-48.5,29.3C-53.2,17.4,-61.2,8.7,-62.2,-0.6C-63.2,-9.8,-57.2,-19.7,-50.6,-28.3C-44.1,-37,-37,-44.4,-28.5,-54.9C-20,-65.4,-10,-78.8,1.3,-81C12.5,-83.2,25,-74.1,30.5,-61.9Z"
+                    transform="translate(100 100) scale(1,0.69)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero  end -->
+    <!-- about -->
+    <section
+      id="about"
+      class="pt-36 pb-32 bg-gradient-to-b from-violet5 to-violet4 dark:bg-none"
+    >
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h4
+              class="font-bold uppercase text-violet text-lg dark:text-danger"
+            >
+              About Me
+            </h4>
+            <h2
+              class="font-bold text-hitam text-3xl mb-3 max-w-xl lg:text-4xl dark:text-white"
+            >
+              Yuk,Mabar gaskeun Hayuuk
+            </h2>
+            <p
+              class="font-medium text-base text-abu lg:text-lg dark:text-gray-300"
+            >
+              Imagine falling in love with a girl I've never met
+            </p>
+          </div>
+          <div class="w-full px-4 lg:w-1/2">
+            <h3
+              class="font-semibold dark:text-white text-hitam text-2xl mb-4 lg:text-3xl lg:pt-8"
+            >
+              My social account
+            </h3>
+            <p
+              class="font-medium text-base text-abu mb-6 lg:text-lg dark:text-gray-300"
+            >
+              Mabar?Chat ae
+            </p>
+            <div class="flex items-center">
+              <!-- Discord -->
+              <a
+                href=""
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center dark:text-white items-center border border-dark hover:border-violet hover:bg-violet hover:text-white text-dark dark:hover:bg-danger dark:hover:text-dark"
+              >
+                <svg
+                  class="fill-current"
+                  role="img"
+                  width="20"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Discord</title>
+                  <path
+                    d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"
+                  />
+                </svg>
+              </a>
+              <!-- Instagram -->
+              <a
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center dark:text-white border border-dark hover:border-violet hover:bg-violet hover:text-white text-dark dark:hover:bg-danger dark:hover:text-dark"
+                href="https://www.instagram.com/vannn.tk/"
+              >
+                <svg
+                  role="img"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                  />
+                </svg>
+              </a>
+              <!-- Twitter -->
+              <a
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center dark:text-white border border-dark hover:border-violet hover:bg-violet hover:text-white text-dark dark:hover:bg-danger dark:hover:text-dark"
+                href="https://twitter.com/Salvator8137"
+              >
+                <svg
+                  class="fill-current"
+                  width="20"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Twitter</title>
+                  <path
+                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                  />
+                </svg>
+              </a>
+              <!-- Github -->
+              <a
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center dark:text-white border border-dark hover:border-violet hover:bg-violet hover:text-white text-dark dark:hover:bg-danger dark:hover:text-dark"
+                href="https://github.com/AndikaVikarMuhamad"
+              >
+                <svg
+                  width="20"
+                  class="fill-current"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg>
+              </a>
+              <!-- Facebook -->
+              <a
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center dark:text-white border border-dark hover:border-violet hover:bg-violet hover:text-white text-dark dark:hover:bg-danger dark:hover:text-dark"
+                href="https://www.facebook.com/profile.php?id=100078690787831"
+              >
+                <svg
+                  width="20"
+                  class="fill-current"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Facebook</title>
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <!-- youtube -->
+              <a
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center dark:text-white border border-dark hover:border-violet hover:bg-violet hover:text-white text-dark dark:hover:bg-danger dark:hover:text-dark"
+                href="https://www.youtube.com/channel/UCKxB0KsC8lRyF2pio4ZbJCw"
+              >
+                <svg
+                  class="fill-current"
+                  width="20"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+              <!-- Mal -->
+              <a
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center dark:text-white border border-dark hover:border-violet hover:bg-violet hover:text-white text-dark dark:hover:bg-danger dark:hover:text-dark"
+                href="https://myanimelist.net/profile/Erumi_"
+              >
+                <svg
+                  class="fill-current"
+                  width="20"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>MyAnimeList</title>
+                  <path
+                    d="M8.273 7.247v8.423l-2.103-.003v-5.216l-2.03 2.404-1.989-2.458-.02 5.285H.001L0 7.247h2.203l1.865 2.545 2.015-2.546 2.19.001zm8.628 2.069l.025 6.335h-2.365l-.008-2.871h-2.8c.07.499.21 1.266.417 1.779.155.381.298.751.583 1.128l-1.705 1.125c-.349-.636-.622-1.337-.878-2.082a9.296 9.296 0 0 1-.507-2.179c-.085-.75-.097-1.471.107-2.212a3.908 3.908 0 0 1 1.161-1.866c.313-.293.749-.5 1.1-.687.351-.187.743-.264 1.107-.359a7.405 7.405 0 0 1 1.191-.183c.398-.034 1.107-.066 2.39-.028l.545 1.749H14.51c-.593.008-.878.001-1.341.209a2.236 2.236 0 0 0-1.278 1.92l2.663.033.038-1.81h2.309zm3.992-2.099v6.627l3.107.032-.43 1.775h-4.807V7.187l2.13.03z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End about -->
+    <!-- Project  -->
+    <section
+      id="project"
+      class="bg-gradient-to-b from-violet4 to-violet6 pt-36 pb-16 dark:bg-none"
+    >
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="mb-2 text-lg font-semibold text-violet dark:text-danger">
+              Portfolio
+            </h4>
+            <h2
+              class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
+            >
+              Project Yang akan datang
+            </h2>
+            <p
+              class="text-md font-medium text-dark md:text-lg dark:text-gray-300"
+            >
+              Gtw belum ada ide(padahal belum ada contekan njirr)
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12"
+        >
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img src="dist/img/cirno.png" alt="Landing Page" width="w-full" />
+            </div>
+            <h3
+              class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
+            >
+              Weather App
+            </h3>
+            <p class="text-base font-medium text-dark dark:text-gray-300">
+              Project Planning
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img src="dist/img/yui 1.png" alt="E-Commerce" width="w-full" />
+            </div>
+            <h3
+              class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
+            >
+              Rest api
+            </h3>
+            <p class="text-base font-medium text-dark dark:text-gray-300">
+              Project Planning
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img
+                src="dist/img/Mirai.png"
+                alt="Technical Documentation"
+                width="w-full"
+              />
+            </div>
+            <h3
+              class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
+            >
+              Landing page
+            </h3>
+            <p class="text-base font-medium text-dark dark:text-gray-300">
+              Project Planning
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img
+                src="dist/img/Kirisu.png"
+                alt="Tribute Page"
+                width="w-full"
+              />
+            </div>
+            <h3
+              class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
+            >
+              Path finding
+            </h3>
+            <p class="text-base font-medium text-dark dark:text-gray-300">
+              Project Planning
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Project End -->
+    <!-- Game -->
+    <section
+      id="game"
+      class="bg-gradient-to-b from-violet6 to-violet7 pt-36 pb-32 dark:bg-none"
+    >
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 text-center">
+            <h4 class="mb-2 text-lg font-semibold text-violet dark:text-danger">
+              Game
+            </h4>
+            <h2
+              class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
+            >
+              Game yang saya mainkan
+            </h2>
+            <p
+              class="text-md font-medium text-dark md:text-lg dark:text-gray-300"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              suscipit facilis velit!
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <a
+              href="https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <svg
+                width="120"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Ubisoft</title>
+                <path
+                  d="M23.561 11.988C23.301-.304 6.954-4.89.656 6.634c.282.206.661.477.943.672a11.747 11.747 0 00-.976 3.067 11.885 11.885 0 00-.184 2.071C.439 18.818 5.621 24 12.005 24c6.385 0 11.556-5.17 11.556-11.556v-.455zm-20.27 2.06c-.152 1.246-.054 1.636-.054 1.788l-.282.098c-.108-.206-.37-.932-.488-1.908C2.163 10.308 4.7 6.96 8.57 6.33c3.544-.52 6.937 1.68 7.728 4.758l-.282.098c-.087-.087-.228-.336-.77-.878-4.281-4.281-11.002-2.32-11.956 3.74zm11.002 2.081a3.145 3.145 0 01-2.59 1.355 3.15 3.15 0 01-3.155-3.155 3.159 3.159 0 012.927-3.144c1.018-.043 1.972.51 2.416 1.398a2.58 2.58 0 01-.455 2.95c.293.205.575.4.856.595zm6.58.12c-1.669 3.782-5.106 5.766-8.77 5.712-7.034-.347-9.083-8.466-4.38-11.393l.207.206c-.076.108-.358.325-.791 1.182-.51 1.041-.672 2.081-.607 2.732.369 5.67 8.314 6.83 11.045 1.214C21.057 8.217 11.822.401 3.626 6.374l-.184-.184C5.599 2.808 9.816 1.3 13.837 2.309c6.147 1.55 9.453 7.956 7.035 13.94z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.minecraft.net/en-us"
+              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <svg
+                role="img"
+                width="120"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Minecraft</title>
+                <path
+                  d="M23.7397 10.0058l-2.4424.0023-.076.1198-.03-.1175h-2.4586l-.0599.136-.023-.136-2.4793.0023-.0438.1613-.0161-.1613-2.5023.0023-.023.265-.007-.265-2.5184.0046-.0092.242-.0254-.242-2.4954.0023-.016.1567-.0439-.1567H7.2673l-.0968.6705-.0553-.1382-.0254-.0024-.2096-.53-1.189.0024-.023.129-.0622-.129H4.431l-.03.1198-.0691-.1198-1.1659.0023-.136.523h-.3156l-.06.2282-.5506-.7512-1.1337.0023L0 13.0403l1.03.954h1.1244l.1774-.6706.0876.0968h.2995l.5.5737h1.1544l.023-.1082.0807.1082h1.1636l.0207-.1175.0737.1175h1.1751l.09-.629.3018.629h1.1889l.0138-.1451.0507.1451H11.03l.0093-.228.0276.228h2.4954l.023-.2511.0093.2511h1.2235l.0392-.175.0115.175h1.2097l.0506-.152.0139.152h1.1958l.0622-.1336.0185.1336h1.1843l.0714-.122.0208.122h1.175l.6798-.9677-.0323-.1544h.3756l.5346-.7396.4562 1.8594h1.152L24 13.0334l-.0184-.0737-.0738-.2535-.069-.2327s-.219-.712-.2466-.8065c-.0346-.1152-.0714-.2327-.1037-.3456l-.0046-.0184.4838-.583zm-2.325.1682h2.2005l.1567.493h-.6383l.0046.0162c.0254.1083.0554.2189.0853.3295.03.1129.0645.2258.0968.3433.0345.1152.069.235.106.3525.0368.1199.0737.2374.1083.3572.023.0737.0438.1451.0668.2189.023.0737.046.1497.0691.2235l.0692.228c.023.0761.0437.1522.0667.2282h-.9976l-.6268-2.2973h-.6405zm-.3548.0023l.1222.493h-1.295l.1175.56h1.3134l.136.553h-1.3342l.2466 1.182-.9954.0023-.5093-2.788zm-2.553.0023l.4816 2.788h-.9954l-.129-.8986h-.3733l.1221.8986h-.9954l-.3064-2.7857zm-2.5484.0023l.1037 1.0322h-.3272l.03.3111h.3272l.1451 1.4424h-.993l-.09-1.1751-.3686-.0092.076 1.1843h-.993l-.1037-2.7834zm-2.546.0023l.0138.493h-1.272l-.0299 1.719h1.3503l.016.5737h-2.364l.0945-2.7834zm-2.5438.0023l-.0208.493H9.56l-.0415.5692 1.3042.0023-.023.5369-1.3296.0023-.0437.6014 1.3456.0045-.0253.5738H8.387l.2926-2.7811zm-2.5392.0023l-.3226 2.781h-.9908l.1245-.8847-.3273-.0092.083-.5737-.3594-.007-.235 1.477H5.311l.5184-2.7811h.917l-.0806.5138.3157.0092-.076.5369.3548.0046L7.41 10.19zm-5.0346.0046h.9171l-.6475 2.7788h-.9884l.2972-1.1797H2.516l-.1543.5737h-.6406l.159-.5737h-.3595l-.3502 1.1797h-.97l.8917-2.7765h.8986l-.1475.5046.3134.0115L2 11.257h.6959l.1451-.5391h.318zm2.182.0046l-.546 2.7811h-.9885l.6175-2.7788zm12.1683.4217l.0391.3248-.341-.0023-.0437-.3202h-.4217l.0438.3525h.387l.0185.129h-.1936l.0715.5461h.2327l-.0184-.1843.3456-.0023.03.1866h.2373l-.083-.5414h-.1935l-.0162-.1314.3963-.0023-.0553-.3548zm-2.9286.0553l.0369.5737h.364l-.0438-.5737zm-1.1958 1.0046l.0184.5484-1.2166-.0023.0115-.4102h1.1774Z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://playvalorant.com/en-us/"
+              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <svg
+                role="img"
+                width="120"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Valorant</title>
+                <path
+                  d="M23.792 2.152a.252.252 0 0 0-.098.083c-3.384 4.23-6.769 8.46-10.15 12.69-.107.093-.025.288.119.265 2.439.003 4.877 0 7.316.001a.66.66 0 0 0 .552-.25c.774-.967 1.55-1.934 2.324-2.903a.72.72 0 0 0 .144-.49c-.002-3.077 0-6.153-.003-9.23.016-.11-.1-.206-.204-.167zM.077 2.166c-.077.038-.074.132-.076.205.002 3.074.001 6.15.001 9.225a.679.679 0 0 0 .158.463l7.64 9.55c.12.152.308.25.505.247 2.455 0 4.91.003 7.365 0 .142.02.222-.174.116-.265C10.661 15.176 5.526 8.766.4 2.35c-.08-.094-.174-.272-.322-.184z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End game -->
+
+    <!-- footer -->
+
+    <footer
+      class="bg-gradient-to-b from-violet7 to-violet2 pt-24 pb-12 dark:bg-none"
+    >
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div
+            class="mb-12 w-full px-4 font-medium text-hitam md:w-1/3 dark:text-white"
+          >
+            <h2 class="mb-5 text-4xl font-bold text-dark dark:text-white">
+              AAU
+            </h2>
+            <h3 class="mb-2 text-2xl font-bold text-dark dark:text-white">
+              Hubungi Saya
+            </h3>
+            <p>Andikavikar135@gmail.comm</p>
+            <p>Katou#</p>
+            <p>Indonesia</p>
+          </div>
+          <div class="mb-12 w-full px-4 md:w-1/3">
+            <h3 class="mb-5 text-xl font-semibold text-dark dark:text-white">
+              Kategori Tulisan
+            </h3>
+            <ul class="text-hitam">
+              <li>
+                <a
+                  href="#"
+                  class="mb-3 inline-block text-base hover:text-biru dark:text-gray-300 dark:hover:text-danger"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="mb-3 inline-block text-base hover:text-biru dark:text-gray-300 dark:hover:text-danger"
+                  >Teknologi</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mb-12 w-full px-4 md:w-1/3">
+            <h3 class="mb-5 text-xl font-semibold text-dark dark:text-white">
+              Tautan
+            </h3>
+            <ul class="text-hitam">
+              <li>
+                <a
+                  href="#home"
+                  class="mb-3 inline-block text-base hover:text-primary dark:text-gray-300 dark:hover:text-danger"
+                  >Beranda</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="mb-3 inline-block text-base hover:text-primary dark:text-gray-300 dark:hover:text-danger"
+                  >Tentang Saya</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#project"
+                  class="mb-3 inline-block text-base hover:text-primary dark:text-gray-300 dark:hover:text-danger"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#game"
+                  class="mb-3 inline-block text-base hover:text-primary dark:text-gray-300 dark:hover:text-danger"
+                  >Game</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="w-full border-t border-slate-700 pt-10">
+          <div class="mb-5 flex items-center justify-center">
+            <!-- Youtube -->
+            <a
+              href="https://www.youtube.com/channel/UCKxB0KsC8lRyF2pio4ZbJCw"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:hover:bg-danger"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>YouTube</title>
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                />
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a
+              href="https://instagram.com/Vannn.tk"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:hover:bg-danger"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Instagram</title>
+                <path
+                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                />
+              </svg>
+            </a>
+
+            <!-- Twitter -->
+            <a
+              href="https://twitter.com/Salvator8137"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white dark:hover:bg-danger"
+            >
+              <svg
+                role="img"
+                width="20"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Twitter</title>
+                <path
+                  d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                />
+              </svg>
+            </a>
+          </div>
+          <p class="text-center text-xs font-medium text-slate-500">
+            Dibuat dengan <span class="text-pink-500">❤️</span> oleh
+            <a
+              href="https://instagram.com/Vannn.tk"
+              target="_blank"
+              class="font-bold text-primary"
+              >Andika vikar Muhamad</a
+            >, Dibantu dengan
+            <a
+              href="https://instagram.com/sandhikagalih"
+              target="_blank"
+              class="font-bold text-sky-500"
+              >Sandhika Galih</a
+            >.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- End footer -->
+
+    <a
+      href="#home"
+      class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-violet p-4 hover:animate-pulse"
+      id="to-top"
+    >
+      <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
+    </a>
+
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
