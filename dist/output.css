@@ -1243,7 +1243,6 @@ video {
 
 body {
   font-family: "inter", sans-serif;
-  background-color: #ffffff;
 }
 
 .navbar-fixed {
@@ -1388,8 +1387,17 @@ body {
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-gray-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
 .dark .dark\:bg-none {
   background-image: none;
+}
+
+.dark .dark\:bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
 .dark .dark\:text-white {
