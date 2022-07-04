@@ -13,6 +13,42 @@ function putarmusikdark() {
   musik.style.display = "none";
   audiodark.play();
 }
+// Musik off/on light
+const off = document.querySelector(".off");
+const on = document.querySelector(".on");
+on.addEventListener("click", () => music("on"));
+off.addEventListener("click", () => music("off"));
+const music = (track) => {
+  if (track === "off") {
+    on.style.display = "block";
+    off.style.display = "none";
+    audiodark.pause();
+    audio.pause();
+  } else if (track === "on") {
+    on.style.display = "none";
+    off.style.display = "block";
+    audiodark.pause();
+    audio.play();
+  }
+};
+// Musik off/on dark
+const offdark = document.getElementById("OffDark");
+const ondark = document.getElementById("OnDark");
+ondark.addEventListener("click", () => musicdark("on"));
+offdark.addEventListener("click", () => musicdark("off"));
+const musicdark = (track) => {
+  if (track === "off") {
+    ondark.style.display = "block";
+    offdark.style.display = "none";
+    audio.pause();
+    audiodark.pause();
+  } else if (track === "on") {
+    ondark.style.display = "none";
+    offdark.style.display = "block";
+    audiodark.play();
+    audio.pause();
+  }
+};
 
 // tombol
 const navMenu = document.querySelector("#nav-menu");
