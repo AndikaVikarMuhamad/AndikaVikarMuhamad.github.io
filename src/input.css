@@ -5,6 +5,22 @@
 body {
   font-family: "inter", sans-serif;
 }
+.tampil {
+  background: rgba(0, 0, 0, 0.7);
+}
+.tampil-body {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+}
+.tampil-body div {
+  @apply bg-white dark:bg-dark p-5 rounded-lg;
+  margin: auto;
+  width: 50%;
+}
+
 .navbar-fixed {
   @apply fixed z-[9999] bg-white bg-opacity-70 backdrop-blur-sm dark:bg-dark dark:bg-opacity-50;
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);

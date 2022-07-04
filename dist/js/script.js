@@ -1,3 +1,19 @@
+//musik
+const musik = document.getElementById("musik");
+const musikdark = document.getElementById("musikdark");
+const audio = document.querySelector(".myAudio");
+const audiodark = document.querySelector(".myAudioDark");
+function putarmusik() {
+  musikdark.style.display = "none";
+  musik.style.display = "none";
+  audio.play();
+}
+function putarmusikdark() {
+  musikdark.style.display = "none";
+  musik.style.display = "none";
+  audiodark.play();
+}
+
 // tombol
 const navMenu = document.querySelector("#nav-menu");
 const tombol = document.querySelector("#tombol");
@@ -5,7 +21,7 @@ tombol.addEventListener("click", function () {
   tombol.classList.toggle("tombol-aktif");
   navMenu.classList.toggle("hidden");
 });
-// end of tombol
+
 // navbar
 window.onscroll = function () {
   const toTop = document.querySelector("#to-Top");
