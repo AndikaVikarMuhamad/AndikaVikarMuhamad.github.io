@@ -9,7 +9,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#7dd3fc",
+        primary: "#facc15",
         violet7: "#8b5cf6", //400
         violet6: "#c4b5fd", //300
         violet5: "#ede9fe", //100
@@ -23,8 +23,10 @@ module.exports = {
         ungu: "#8b5cf6",
         danger: "#facc15",
         Yellow: "#eab308",
-        dark: "#1e293b",
-        hitam: "#0f172a",
+        // dark: "#1e293b",
+        dark: "#000000",
+        // hitam: "#0f172a",
+        hitam: "#1e293b",
         abu: "#64748b",
       },
       screens: {

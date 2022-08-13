@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andika vikar🥶</title>
     <link href="dist/output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="https://www.logo.wine/a/logo/AVM_GmbH/AVM_GmbH-Logo.wine.svg"
+      type="image/x-icon"
+    />
     <script>
       if (
         localStorage.theme === "dark" ||
@@ -18,33 +23,51 @@
       }
     </script>
   </head>
-  <body
-    class="dark:bg-gradient-to-b from-slate-700 to-slate-900 dark:text-white"
-  >
-<!-- Dark -->
-  <div class="tampil z-40 fixed top-0 left-0 right-0 bottom-0 hidden dark:block" id="musikdark">
-    <div class="tampil-body">
-      <div>
-       <audio class="myAudioDark" loop>
-        <source src="src/Afterdark.mp3" type="audio/mp3">
-       </audio>
-        <h1 class="text-base font-semibold text-danger md:text-xl mb-6">Selamat datang di Portfolio saya </h1>
-        <button class="text-base font-semibold text-white  bg-danger py-2 px-6 rounded-full hover:shadow-xl hover:bg-slate-300 transition duration-250 ease-linear " onclick="putarmusikdark()">Lanjutkan</button>
+  <body class="dark:text-dark">
+    <!-- Dark -->
+    <div
+      class="tampil z-40 fixed top-0 left-0 right-0 bottom-0 hidden dark:block"
+      id="musikdark"
+    >
+      <div class="tampil-body">
+        <div>
+          <audio class="myAudioDark" loop>
+            <source src="src/Afterdark.mp3" type="audio/mp3" />
+          </audio>
+          <h1 class="text-base font-semibold text-danger md:text-xl mb-6">
+            Selamat datang di Portfolio saya
+          </h1>
+          <button
+            class="text-base font-semibold text-white bg-danger py-2 px-6 rounded-full hover:shadow-xl hover:bg-slate-300 transition duration-250 ease-linear"
+            onclick="putarmusikdark()"
+          >
+            Lanjutkan
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- Light -->
-  <div class="tampil z-40 fixed top-0 left-0 right-0 bottom-0 dark:hidden" id="musik">
-    <div class="tampil-body">
-      <div>
-       <audio class="myAudio" loop>
-        <source src="src/skizo.mp3" type="audio/mp3">
-       </audio>
-        <h1 class="text-base font-semibold text-ungu md:text-xl  mb-6">Selamat datang di Portfolio saya </h1>
-        <button class="text-base font-semibold text-white  bg-violet3 py-2 px-6 rounded-full hover:shadow-xl hover:bg-slate-700 transition duration-250 ease-linear " onclick="putarmusik()">Lanjutkan</button>
+    <!-- Light -->
+    <div
+      class="tampil z-40 fixed top-0 left-0 right-0 bottom-0 dark:hidden"
+      id="musik"
+    >
+      <div class="tampil-body">
+        <div>
+          <audio class="myAudio" loop>
+            <source src="src/skizo.mp3" type="audio/mp3" />
+          </audio>
+          <h1 class="text-base font-semibold text-ungu md:text-xl mb-6">
+            Selamat datang di Portfolio saya
+          </h1>
+          <button
+            class="text-base font-semibold text-white bg-violet3 py-2 px-6 rounded-full hover:shadow-xl hover:bg-slate-700 transition duration-250 ease-linear"
+            onclick="putarmusik()"
+          >
+            Lanjutkan
+          </button>
+        </div>
       </div>
     </div>
-  </div>
     <!-- Navbar -->
     <header
       class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
@@ -54,34 +77,55 @@
           <div class="px-4">
             <a class="block py-6 text-ungu font-bold dark:text-danger" href="">
               Andika vikar
-            </a> 
+            </a>
           </div>
-         
-             <!-- Sound of/on light -->
+
+          <!-- Sound of/on light -->
           <div class="sound flex items-center font-light dark:hidden">
             <div class="soundcloud">
-              <svg role="img" class="fill-current m-1" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>SoundCloud</title><path d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c0-.057-.045-.1-.09-.1m-.899.828c-.06 0-.091.037-.104.094L0 14.479l.165 1.308c0 .055.045.094.09.094s.089-.045.104-.104l.21-1.319-.21-1.334c0-.061-.044-.09-.09-.09m1.83-1.229c-.061 0-.12.045-.12.104l-.21 2.563.225 2.458c0 .06.045.12.119.12.061 0 .105-.061.121-.12l.254-2.474-.254-2.548c-.016-.06-.061-.12-.121-.12m.945-.089c-.075 0-.135.06-.15.135l-.193 2.64.21 2.544c.016.077.075.138.149.138.075 0 .135-.061.15-.15l.24-2.532-.24-2.623c0-.075-.06-.135-.135-.135l-.031-.017zm1.155.36c-.005-.09-.075-.149-.159-.149-.09 0-.158.06-.164.149l-.217 2.43.2 2.563c0 .09.075.157.159.157.074 0 .148-.068.148-.158l.227-2.563-.227-2.444.033.015zm.809-1.709c-.101 0-.18.09-.18.181l-.21 3.957.187 2.563c0 .09.08.164.18.164.094 0 .174-.09.18-.18l.209-2.563-.209-3.972c-.008-.104-.088-.18-.18-.18m.959-.914c-.105 0-.195.09-.203.194l-.18 4.872.165 2.548c0 .12.09.209.195.209.104 0 .194-.089.21-.209l.193-2.548-.192-4.856c-.016-.12-.105-.21-.21-.21m.989-.449c-.121 0-.211.089-.225.209l-.165 5.275.165 2.52c.014.119.104.225.225.225.119 0 .225-.105.225-.225l.195-2.52-.196-5.275c0-.12-.105-.225-.225-.225m1.245.045c0-.135-.105-.24-.24-.24-.119 0-.24.105-.24.24l-.149 5.441.149 2.503c.016.135.121.24.256.24s.24-.105.24-.24l.164-2.503-.164-5.456-.016.015zm.749-.134c-.135 0-.255.119-.255.254l-.15 5.322.15 2.473c0 .15.12.255.255.255s.255-.12.255-.27l.15-2.474-.165-5.307c0-.148-.12-.27-.271-.27m1.005.166c-.164 0-.284.135-.284.285l-.103 5.143.135 2.474c0 .149.119.277.284.277.149 0 .271-.12.284-.285l.121-2.443-.135-5.112c-.012-.164-.135-.285-.285-.285m1.184-.945c-.045-.029-.105-.044-.165-.044s-.119.015-.165.044c-.09.054-.149.15-.149.255v.061l-.104 6.048.115 2.449v.008c.008.06.03.135.074.18.058.061.142.104.234.104.08 0 .158-.044.209-.09.058-.06.091-.135.091-.225l.015-.24.117-2.203-.135-6.086c0-.104-.061-.193-.135-.239l-.002-.022zm1.006-.547c-.045-.045-.09-.061-.15-.061-.074 0-.149.016-.209.061-.075.061-.119.15-.119.24v.029l-.137 6.609.076 1.215.061 1.185c0 .164.148.314.328.314.181 0 .33-.15.33-.329l.15-2.414-.15-6.637c0-.12-.074-.221-.165-.277m8.934 3.777c-.405 0-.795.086-1.139.232-.24-2.654-2.46-4.736-5.188-4.736-.659 0-1.305.135-1.889.359-.225.09-.27.18-.285.359v9.368c.016.18.15.33.33.345h8.185C22.681 17.218 24 15.914 24 14.28s-1.319-2.952-2.938-2.952"/></svg>
+              <svg
+                role="img"
+                class="fill-current m-1"
+                width="20"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>SoundCloud</title>
+                <path
+                  d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c0-.057-.045-.1-.09-.1m-.899.828c-.06 0-.091.037-.104.094L0 14.479l.165 1.308c0 .055.045.094.09.094s.089-.045.104-.104l.21-1.319-.21-1.334c0-.061-.044-.09-.09-.09m1.83-1.229c-.061 0-.12.045-.12.104l-.21 2.563.225 2.458c0 .06.045.12.119.12.061 0 .105-.061.121-.12l.254-2.474-.254-2.548c-.016-.06-.061-.12-.121-.12m.945-.089c-.075 0-.135.06-.15.135l-.193 2.64.21 2.544c.016.077.075.138.149.138.075 0 .135-.061.15-.15l.24-2.532-.24-2.623c0-.075-.06-.135-.135-.135l-.031-.017zm1.155.36c-.005-.09-.075-.149-.159-.149-.09 0-.158.06-.164.149l-.217 2.43.2 2.563c0 .09.075.157.159.157.074 0 .148-.068.148-.158l.227-2.563-.227-2.444.033.015zm.809-1.709c-.101 0-.18.09-.18.181l-.21 3.957.187 2.563c0 .09.08.164.18.164.094 0 .174-.09.18-.18l.209-2.563-.209-3.972c-.008-.104-.088-.18-.18-.18m.959-.914c-.105 0-.195.09-.203.194l-.18 4.872.165 2.548c0 .12.09.209.195.209.104 0 .194-.089.21-.209l.193-2.548-.192-4.856c-.016-.12-.105-.21-.21-.21m.989-.449c-.121 0-.211.089-.225.209l-.165 5.275.165 2.52c.014.119.104.225.225.225.119 0 .225-.105.225-.225l.195-2.52-.196-5.275c0-.12-.105-.225-.225-.225m1.245.045c0-.135-.105-.24-.24-.24-.119 0-.24.105-.24.24l-.149 5.441.149 2.503c.016.135.121.24.256.24s.24-.105.24-.24l.164-2.503-.164-5.456-.016.015zm.749-.134c-.135 0-.255.119-.255.254l-.15 5.322.15 2.473c0 .15.12.255.255.255s.255-.12.255-.27l.15-2.474-.165-5.307c0-.148-.12-.27-.271-.27m1.005.166c-.164 0-.284.135-.284.285l-.103 5.143.135 2.474c0 .149.119.277.284.277.149 0 .271-.12.284-.285l.121-2.443-.135-5.112c-.012-.164-.135-.285-.285-.285m1.184-.945c-.045-.029-.105-.044-.165-.044s-.119.015-.165.044c-.09.054-.149.15-.149.255v.061l-.104 6.048.115 2.449v.008c.008.06.03.135.074.18.058.061.142.104.234.104.08 0 .158-.044.209-.09.058-.06.091-.135.091-.225l.015-.24.117-2.203-.135-6.086c0-.104-.061-.193-.135-.239l-.002-.022zm1.006-.547c-.045-.045-.09-.061-.15-.061-.074 0-.149.016-.209.061-.075.061-.119.15-.119.24v.029l-.137 6.609.076 1.215.061 1.185c0 .164.148.314.328.314.181 0 .33-.15.33-.329l.15-2.414-.15-6.637c0-.12-.074-.221-.165-.277m8.934 3.777c-.405 0-.795.086-1.139.232-.24-2.654-2.46-4.736-5.188-4.736-.659 0-1.305.135-1.889.359-.225.09-.27.18-.285.359v9.368c.016.18.15.33.33.345h8.185C22.681 17.218 24 15.914 24 14.28s-1.319-2.952-2.938-2.952"
+                />
+              </svg>
             </div>
             <span>sound</span>
             <div class="on-off cursor-pointer ml-1">
               <span class="off text-red-600">OFF</span>
-              <span class="on text-blue-500 ">ON</span>
+              <span class="on text-blue-500">ON</span>
             </div>
           </div>
           <!-- Sound on/off dark -->
-          <div class="sound dark:flex items-center font-light hidden" >
+          <div class="sound dark:flex items-center font-light hidden">
             <div class="soundcloud">
-              <svg role="img" class="fill-current m-1" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>SoundCloud</title><path d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c0-.057-.045-.1-.09-.1m-.899.828c-.06 0-.091.037-.104.094L0 14.479l.165 1.308c0 .055.045.094.09.094s.089-.045.104-.104l.21-1.319-.21-1.334c0-.061-.044-.09-.09-.09m1.83-1.229c-.061 0-.12.045-.12.104l-.21 2.563.225 2.458c0 .06.045.12.119.12.061 0 .105-.061.121-.12l.254-2.474-.254-2.548c-.016-.06-.061-.12-.121-.12m.945-.089c-.075 0-.135.06-.15.135l-.193 2.64.21 2.544c.016.077.075.138.149.138.075 0 .135-.061.15-.15l.24-2.532-.24-2.623c0-.075-.06-.135-.135-.135l-.031-.017zm1.155.36c-.005-.09-.075-.149-.159-.149-.09 0-.158.06-.164.149l-.217 2.43.2 2.563c0 .09.075.157.159.157.074 0 .148-.068.148-.158l.227-2.563-.227-2.444.033.015zm.809-1.709c-.101 0-.18.09-.18.181l-.21 3.957.187 2.563c0 .09.08.164.18.164.094 0 .174-.09.18-.18l.209-2.563-.209-3.972c-.008-.104-.088-.18-.18-.18m.959-.914c-.105 0-.195.09-.203.194l-.18 4.872.165 2.548c0 .12.09.209.195.209.104 0 .194-.089.21-.209l.193-2.548-.192-4.856c-.016-.12-.105-.21-.21-.21m.989-.449c-.121 0-.211.089-.225.209l-.165 5.275.165 2.52c.014.119.104.225.225.225.119 0 .225-.105.225-.225l.195-2.52-.196-5.275c0-.12-.105-.225-.225-.225m1.245.045c0-.135-.105-.24-.24-.24-.119 0-.24.105-.24.24l-.149 5.441.149 2.503c.016.135.121.24.256.24s.24-.105.24-.24l.164-2.503-.164-5.456-.016.015zm.749-.134c-.135 0-.255.119-.255.254l-.15 5.322.15 2.473c0 .15.12.255.255.255s.255-.12.255-.27l.15-2.474-.165-5.307c0-.148-.12-.27-.271-.27m1.005.166c-.164 0-.284.135-.284.285l-.103 5.143.135 2.474c0 .149.119.277.284.277.149 0 .271-.12.284-.285l.121-2.443-.135-5.112c-.012-.164-.135-.285-.285-.285m1.184-.945c-.045-.029-.105-.044-.165-.044s-.119.015-.165.044c-.09.054-.149.15-.149.255v.061l-.104 6.048.115 2.449v.008c.008.06.03.135.074.18.058.061.142.104.234.104.08 0 .158-.044.209-.09.058-.06.091-.135.091-.225l.015-.24.117-2.203-.135-6.086c0-.104-.061-.193-.135-.239l-.002-.022zm1.006-.547c-.045-.045-.09-.061-.15-.061-.074 0-.149.016-.209.061-.075.061-.119.15-.119.24v.029l-.137 6.609.076 1.215.061 1.185c0 .164.148.314.328.314.181 0 .33-.15.33-.329l.15-2.414-.15-6.637c0-.12-.074-.221-.165-.277m8.934 3.777c-.405 0-.795.086-1.139.232-.24-2.654-2.46-4.736-5.188-4.736-.659 0-1.305.135-1.889.359-.225.09-.27.18-.285.359v9.368c.016.18.15.33.33.345h8.185C22.681 17.218 24 15.914 24 14.28s-1.319-2.952-2.938-2.952"/></svg>
+              <svg
+                role="img"
+                class="fill-current m-1"
+                width="20"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>SoundCloud</title>
+                <path
+                  d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c0-.057-.045-.1-.09-.1m-.899.828c-.06 0-.091.037-.104.094L0 14.479l.165 1.308c0 .055.045.094.09.094s.089-.045.104-.104l.21-1.319-.21-1.334c0-.061-.044-.09-.09-.09m1.83-1.229c-.061 0-.12.045-.12.104l-.21 2.563.225 2.458c0 .06.045.12.119.12.061 0 .105-.061.121-.12l.254-2.474-.254-2.548c-.016-.06-.061-.12-.121-.12m.945-.089c-.075 0-.135.06-.15.135l-.193 2.64.21 2.544c.016.077.075.138.149.138.075 0 .135-.061.15-.15l.24-2.532-.24-2.623c0-.075-.06-.135-.135-.135l-.031-.017zm1.155.36c-.005-.09-.075-.149-.159-.149-.09 0-.158.06-.164.149l-.217 2.43.2 2.563c0 .09.075.157.159.157.074 0 .148-.068.148-.158l.227-2.563-.227-2.444.033.015zm.809-1.709c-.101 0-.18.09-.18.181l-.21 3.957.187 2.563c0 .09.08.164.18.164.094 0 .174-.09.18-.18l.209-2.563-.209-3.972c-.008-.104-.088-.18-.18-.18m.959-.914c-.105 0-.195.09-.203.194l-.18 4.872.165 2.548c0 .12.09.209.195.209.104 0 .194-.089.21-.209l.193-2.548-.192-4.856c-.016-.12-.105-.21-.21-.21m.989-.449c-.121 0-.211.089-.225.209l-.165 5.275.165 2.52c.014.119.104.225.225.225.119 0 .225-.105.225-.225l.195-2.52-.196-5.275c0-.12-.105-.225-.225-.225m1.245.045c0-.135-.105-.24-.24-.24-.119 0-.24.105-.24.24l-.149 5.441.149 2.503c.016.135.121.24.256.24s.24-.105.24-.24l.164-2.503-.164-5.456-.016.015zm.749-.134c-.135 0-.255.119-.255.254l-.15 5.322.15 2.473c0 .15.12.255.255.255s.255-.12.255-.27l.15-2.474-.165-5.307c0-.148-.12-.27-.271-.27m1.005.166c-.164 0-.284.135-.284.285l-.103 5.143.135 2.474c0 .149.119.277.284.277.149 0 .271-.12.284-.285l.121-2.443-.135-5.112c-.012-.164-.135-.285-.285-.285m1.184-.945c-.045-.029-.105-.044-.165-.044s-.119.015-.165.044c-.09.054-.149.15-.149.255v.061l-.104 6.048.115 2.449v.008c.008.06.03.135.074.18.058.061.142.104.234.104.08 0 .158-.044.209-.09.058-.06.091-.135.091-.225l.015-.24.117-2.203-.135-6.086c0-.104-.061-.193-.135-.239l-.002-.022zm1.006-.547c-.045-.045-.09-.061-.15-.061-.074 0-.149.016-.209.061-.075.061-.119.15-.119.24v.029l-.137 6.609.076 1.215.061 1.185c0 .164.148.314.328.314.181 0 .33-.15.33-.329l.15-2.414-.15-6.637c0-.12-.074-.221-.165-.277m8.934 3.777c-.405 0-.795.086-1.139.232-.24-2.654-2.46-4.736-5.188-4.736-.659 0-1.305.135-1.889.359-.225.09-.27.18-.285.359v9.368c.016.18.15.33.33.345h8.185C22.681 17.218 24 15.914 24 14.28s-1.319-2.952-2.938-2.952"
+                />
+              </svg>
             </div>
-            <span>sound</span>
+            <span class="text-white">sound</span>
             <div class="on-off cursor-pointer ml-1">
               <span class="off text-red-600" id="OffDark">OFF</span>
               <span class="on text-blue-500" id="OnDark">ON</span>
             </div>
           </div>
           <!-- End sound -->
-         
-         
+
           <div class="flex items-center px-4">
             <button
               id="tombol"
@@ -167,7 +211,9 @@
     <!-- Hero  -->
     <section
       id="home"
-      class="pt-36 bg-gradient-to-b from-white to-violet5 dark:bg-none"
+      class="pt-36 bg-none"
+      data-parallax="scroll"
+      data-image-src="https://wallpaperaccess.com/full/2825711.gif"
     >
       <div class="container">
         <div class="flex flex-wrap">
@@ -190,9 +236,10 @@
               >
             </h2>
             <p
-              class="font-medium text-abu mb-10 leading-relaxed dark:text-gray-300"
+              class="font-medium text-dark mb-10 leading-relaxed dark:text-dark"
             >
-              Mereka bilang waifuku tidak nyata,Lantas mengapa perasaan ini begitu terasa nyata???
+              Mereka bilang waifuku tidak nyata,Lantas mengapa perasaan ini
+              begitu terasa nyata???
             </p>
             <a
               href="https://discordapp.com/users/894175067645308989"
@@ -261,10 +308,7 @@
     </section>
     <!-- Hero  end -->
     <!-- about -->
-    <section
-      id="about"
-      class="pt-36 pb-32 bg-gradient-to-b from-violet5 to-violet4 dark:bg-none"
-    >
+    <section id="about" class="pt-36 pb-32 dark:bg-dark bg-green-500">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full px-4 mb-10 lg:w-1/2">
@@ -279,19 +323,17 @@
               Yuk,Mabar gaskeun Hayuuk
             </h2>
             <p
-              class="font-medium text-base text-abu lg:text-lg dark:text-gray-300"
+              class="font-medium text-base text-dark lg:text-lg dark:text-gray-300"
+            ></p>
+            <div
+              class="font-medium text-base text-dark lg:text-lg dark:text-gray-300"
             >
-              <div class="font-medium text-base text-abu lg:text-lg dark:text-gray-300">
-                Dear Yui , it's been
-              
-                  <span id="Day" ></span> Day
-                  <span id="Hour"></span> Hour
-                  <span id="Minute"></span> Minute
-                  <span id="Second"></span> Second
-                  <p>But I am still in love with you.</p>  
-              
-              </div>
-            </p>
+              Dear Yui , it's been
+
+              <span id="Day"></span> Day <span id="Hour"></span> Hour
+              <span id="Minute"></span> Minute <span id="Second"></span> Second
+              <p>But I am still in love with you.</p>
+            </div>
           </div>
           <div class="w-full px-4 lg:w-1/2">
             <h3
@@ -300,7 +342,7 @@
               My social account
             </h3>
             <p
-              class="font-medium text-base text-abu mb-6 lg:text-lg dark:text-gray-300"
+              class="font-medium text-base text-dark mb-6 lg:text-lg dark:text-gray-300"
             >
               Mabar?Chat ae
             </p>
@@ -427,10 +469,7 @@
     </section>
     <!-- End about -->
     <!-- Project  -->
-    <section
-      id="project"
-      class="bg-gradient-to-b from-violet4 to-violet6 pt-36 pb-16 dark:bg-none"
-    >
+    <section id="project" class="pt-36 pb-16 dark:bg-dark bg-green-500">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
@@ -456,44 +495,40 @@
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
               <img
-                src="https://ichikaa.xyz/file/DPQNduYO2U99F3QsUCjz.png"
+                src="dist/img/Weather.png"
                 alt="Landing Page"
                 width="w-full"
               />
             </div>
             <h3
               class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
-            ><a href="https://WeatherApp.andikavikar135.repl.co">
-              Weather App</a>
+            >
+              <a href="https://WeatherApp.andikavikar135.repl.co">
+                Weather App</a
+              >
             </h3>
-            <p  class="text-base font-medium text-dark dark:text-gray-300">
+            <p class="text-base font-medium text-dark dark:text-gray-300">
               Masih belom sempurna :D
-            </p>
-          </div>
-         <div class="mb-12 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img
-                src="https://ichikaa.xyz/file/b8bSoHwp7RSsY6KBHLn0.png"
-                alt="Landing Page"
-                width="w-full"
-              />
-            </div>
-            <h3
-              class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
-            ><a href="https://andikavikarmuhamad.github.io/movie/">
-              Movie search</a>
-            </h3>
-            <p  class="text-base font-medium text-dark dark:text-gray-300">
-               Masih suka error
             </p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
-              <img
-                src="dist/img/Landing.png"
-                alt="Landing"
-                width="w-full"
-              />
+              <img src="dist/img/Movie.png" alt="Landing Page" width="w-full" />
+            </div>
+            <h3
+              class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
+            >
+              <a href="https://andikavikarmuhamad.github.io/movie/">
+                Movie search</a
+              >
+            </h3>
+            <p class="text-base font-medium text-dark dark:text-gray-300">
+              Masih suka error
+            </p>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img src="dist/img/Landing.png" alt="Landing" width="w-full" />
             </div>
             <h3
               class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
@@ -506,16 +541,12 @@
           </div>
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
-              <img
-                src="dist/img/Screenshot (64).png"
-                alt="Rest Api"
-                width="w-full"
-              />
+              <img src="dist/img/Api.png" alt="Rest Api" width="w-full" />
             </div>
             <h3
               class="mt-5 mb-3 text-xl font-semibold text-dark dark:text-white"
             >
-             Rest Api
+              Rest Api
             </h3>
             <p class="text-base font-medium text-dark dark:text-gray-300">
               Project Planning
@@ -526,10 +557,7 @@
     </section>
     <!-- Project End -->
     <!-- Game -->
-    <section
-      id="game"
-      class="bg-gradient-to-b from-violet6 to-violet7 pt-36 pb-32 dark:bg-none"
-    >
+    <section id="game" class="pt-36 pb-32 dark:bg-dark bg-green-500">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 text-center">
@@ -553,10 +581,11 @@
           <div class="flex flex-wrap items-center justify-center">
             <a
               href="https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8 text-danger"
             >
               <svg
                 width="120"
+                class="fill-current"
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -569,10 +598,11 @@
             </a>
             <a
               href="https://www.minecraft.net/en-us"
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8 text-danger"
             >
               <svg
                 role="img"
+                class="fill-current"
                 width="120"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -585,11 +615,12 @@
             </a>
             <a
               href="https://playvalorant.com/en-us/"
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8 text-danger"
             >
               <svg
                 role="img"
                 width="120"
+                class="fill-current"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -607,9 +638,7 @@
 
     <!-- footer -->
 
-    <footer
-      class="bg-gradient-to-b from-violet7 to-violet2 pt-24 pb-12 dark:bg-none"
-    >
+    <footer class="pt-24 pb-12 dark:bg-dark bg-green-500">
       <div class="container">
         <div class="flex flex-wrap">
           <div
@@ -622,7 +651,7 @@
               Hubungi Saya
             </h3>
             <p>Andikavikar135@gmail.comm</p>
-            <p>Katou#</p>
+            <p>Katou##0545</p>
             <p>Indonesia</p>
           </div>
           <div class="mb-12 w-full px-4 md:w-1/3">
@@ -633,14 +662,14 @@
               <li>
                 <a
                   href="#"
-                  class="mb-3 inline-block text-base hover:text-biru dark:text-gray-300 dark:hover:text-danger"
+                  class="mb-3 inline-block text-base hover:text-biru dark:text-gray-300 dark:hover:text-danger text-dark"
                   >Portfolio</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="mb-3 inline-block text-base hover:text-biru dark:text-gray-300 dark:hover:text-danger"
+                  class="mb-3 inline-block text-base hover:text-biru dark:text-gray-300 dark:hover:text-danger text-dark"
                   >Teknologi</a
                 >
               </li>
@@ -745,7 +774,7 @@
               </svg>
             </a>
           </div>
-          <p class="text-center text-xs font-medium text-slate-500">
+          <p class="text-center text-xs font-medium text-dark dark:text-white">
             Dibuat dengan <span class="text-pink-500">❤️</span> oleh
             <a
               href="https://instagram.com/Vannn.tk"
@@ -773,9 +802,8 @@
     >
       <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
     </a>
-    <script src="dist/js/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <script src="dist/js/script.js"></script>
-  <script src="dist/js/timer.js"></script>
-
   </body>
 </html>
