@@ -20,10 +20,11 @@ header {
 #home {
   font-family: "Minecraft";
   font-size: larger;
-  height: 100vh;
+  height: 100%;
 }
 #about {
   font-family: "minecraft";
+  
 }
 #project {
   font-family: "baloon";
@@ -38,17 +39,6 @@ footer {
   font-family: "baloon";
 }
 
-#home::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 30vh;
-  /* background: linear-gradient(to top, rgba(0, 0, 0), rgba(0, 0, 0, 0)); */
-  background: linear-gradient(to top, rgba(34, 197, 94), rgba(34, 197, 94, 0));
-  @apply dark:bg-gradient-to-t from-dark to-transparent;
-}
 .tampil {
   background: rgba(0, 0, 0, 0.7);
 }
@@ -87,4 +77,30 @@ footer {
 }
 #dark-toggle:checked ~ label div.toggle-circle {
   @apply translate-x-3;
+}
+/* Hide scrollbar */
+::-webkit-scrollbar{
+  width: 0;
+}
+::-webkit-scrollbar-track{
+  background: transparent;
+}
+::-webkit-scrollbar-thumb{
+  background: transparent;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: transparent;
+}
+
+
+/* Cursor */
+.cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  transition: 0.1s;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
 }
