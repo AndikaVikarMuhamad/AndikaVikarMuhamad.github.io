@@ -1361,33 +1361,20 @@ footer {
 
 /* Hide scrollbar */
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background: transparent;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: transparent;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
   background: transparent;
-}
-
-/* Cursor */
-
-.cursor {
-  position: fixed;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: #fff;
-  transition: 0.1s;
-  transform: translate(-50%,-50%);
-  pointer-events: none;
 }
 
 @keyframes pulse {

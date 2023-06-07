@@ -124,12 +124,3 @@ setInterval(update_time, 1000);
 window.onload = function () {
   update_time();
 };
-
-// Cursor 
-
-const Cursor = document.querySelector(".cursor");
-document.addEventListener("mousemove", (e) => {
-  Cursor.style.left = e.pageX + "px";
-  Cursor.style.top = e.pageY + "px";
-  console.log(e.pageX, e.pageY);
-})
