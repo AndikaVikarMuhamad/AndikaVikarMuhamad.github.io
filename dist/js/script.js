@@ -1,6 +1,6 @@
 //musik
 const musik = document.getElementById("musik");
-const start_date = new Date("Sep 2, 2018 10:53:17").getTime();
+const start_date = new Date("Sep 2, 2021 10:53:17").getTime();
 const musikdark = document.getElementById("musikdark");
 const audio = document.querySelector(".myAudio");
 const audiodark = document.querySelector(".myAudioDark");
