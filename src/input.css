@@ -22,36 +22,15 @@ header {
   font-size: larger;
   height: 100%;
 }
-#about {
+#about,
+#project,
+#game,
+footer {
   font-family: "minecraft";
 }
-#project {
-  font-family: "baloon";
-}
-#game {
-  font-family: "peteroy";
-}
+
 body {
   /* font-family: "Minecraft"; */
-}
-footer {
-  font-family: "baloon";
-}
-
-.tampil {
-  background: rgba(0, 0, 0, 0.7);
-}
-.tampil-body {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  justify-content: center;
-}
-.tampil-body div {
-  @apply bg-white dark:bg-dark p-5 rounded-lg;
-  margin: auto;
-  width: 50%;
 }
 
 .navbar-fixed {
