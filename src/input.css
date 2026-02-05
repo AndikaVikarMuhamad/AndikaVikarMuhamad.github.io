@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-  font-family: "Minecraft";
-  src: url("../src/font/Minecraft.ttf");
+  font-family: "Helvetica";
+  src: url("../src/font/Helvetica.ttf");
 }
 @font-face {
   font-family: "baloon";
@@ -18,7 +18,7 @@ header {
   font-family: "baloon";
 }
 #home {
-  font-family: "Minecraft";
+  font-family: "Helvetica";
   font-size: larger;
   height: 100%;
 }
@@ -26,11 +26,11 @@ header {
 #project,
 #game,
 footer {
-  font-family: "minecraft";
+  font-family: "Helvetica";
 }
 
 body {
-  /* font-family: "Minecraft"; */
+  font-family: "Helvetica";
 }
 
 .navbar-fixed {

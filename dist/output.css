@@ -663,6 +663,10 @@ video {
   margin-bottom: 3rem;
 }
 
+.mb-14 {
+  margin-bottom: 3.5rem;
+}
+
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -719,8 +723,8 @@ video {
   margin-top: 1.25rem;
 }
 
-.mb-14 {
-  margin-bottom: 3.5rem;
+.mb-0 {
+  margin-bottom: 0px;
 }
 
 .block {
@@ -809,10 +813,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 @keyframes pulse {
   50% {
     opacity: .5;
@@ -829,6 +829,10 @@ video {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -936,9 +940,14 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-teal-500 {
+.bg-purple-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(20 184 166 / var(--tw-bg-opacity));
+  background-color: rgb(168 85 247 / var(--tw-bg-opacity));
+}
+
+.bg-purple-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(233 213 255 / var(--tw-bg-opacity));
 }
 
 .bg-none {
@@ -1018,6 +1027,10 @@ video {
 
 .pt-36 {
   padding-top: 9rem;
+}
+
+.pb-14 {
+  padding-bottom: 3.5rem;
 }
 
 .text-center {
@@ -1119,11 +1132,6 @@ video {
   color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
-.text-red-600 {
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
-}
-
 .text-slate-300 {
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity));
@@ -1144,8 +1152,21 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-indigo-700 {
+  --tw-text-opacity: 1;
+  color: rgb(67 56 202 / var(--tw-text-opacity));
+}
+
 .opacity-60 {
   opacity: 0.6;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.opacity-10 {
+  opacity: 0.1;
 }
 
 .shadow-lg {
@@ -1190,9 +1211,9 @@ video {
 }
 
 @font-face {
-  font-family: "Minecraft";
+  font-family: "Helvetica";
 
-  src: url("../src/font/Minecraft.ttf");
+  src: url("../src/font/Helvetica.ttf");
 }
 
 @font-face {
@@ -1212,7 +1233,7 @@ header {
 }
 
 #home {
-  font-family: "Minecraft";
+  font-family: "Helvetica";
   font-size: larger;
   height: 100%;
 }
@@ -1221,11 +1242,11 @@ header {
 #project,
 #game,
 footer {
-  font-family: "minecraft";
+  font-family: "Helvetica";
 }
 
 body {
-  /* font-family: "Minecraft"; */
+  font-family: "Helvetica";
 }
 
 .navbar-fixed {
@@ -1340,11 +1361,6 @@ body {
   background-color: rgb(124 58 237 / var(--tw-bg-opacity));
 }
 
-.hover\:text-danger:hover {
-  --tw-text-opacity: 1;
-  color: rgb(250 204 21 / var(--tw-text-opacity));
-}
-
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity));
@@ -1353,6 +1369,11 @@ body {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-danger:hover {
+  --tw-text-opacity: 1;
+  color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-100:hover {
@@ -1375,12 +1396,9 @@ body {
   color: rgb(124 58 237 / var(--tw-text-opacity));
 }
 
-.dark\:block:is(.dark *) {
-  display: block;
-}
-
-.dark\:hidden:is(.dark *) {
-  display: none;
+.dark\:border-gray-300:is(.dark *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
 .dark\:bg-danger:is(.dark *) {
@@ -1459,6 +1477,10 @@ body {
 }
 
 @media (min-width: 640px) {
+  .sm\:pb-14 {
+    padding-bottom: 3.5rem;
+  }
+
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1483,6 +1505,14 @@ body {
   .md\:px-20 {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .md\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:pb-14 {
+    padding-bottom: 3.5rem;
   }
 
   .md\:text-lg {
